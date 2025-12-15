@@ -1,0 +1,23 @@
+{
+  "name": "Ayah Echo",
+  "short_name": "Ayah Echo",
+  "description": "A learning and memorization tool for the 99 names of Allah.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E0F4F1",
+  "theme_color": "#66A5AD",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
