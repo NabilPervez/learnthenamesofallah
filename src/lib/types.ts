@@ -10,6 +10,12 @@ export type NameOfAllah = {
     arabic: string;
     english: string;
   };
+  hadith?: {
+    topic?: string;
+    arabic: string;
+    english: string;
+    reference: string;
+  };
 };
 
 export interface QuizQuestion {

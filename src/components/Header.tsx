@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, HelpCircle, Target } from "lucide-react";
+import { BookOpen, HelpCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NavLink = ({ href, children, icon: Icon }: { href: string; children: React.ReactNode; icon: React.ElementType }) => {
@@ -25,14 +25,8 @@ const NavLink = ({ href, children, icon: Icon }: { href: string; children: React
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-sm">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2">
-          <Target className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl font-bold text-foreground">
-            Asmaul Husna
-          </span>
-        </Link>
-        <nav className="flex items-center gap-2">
+      <div className="container mx-auto flex h-16 items-center justify-center px-4">
+        <nav className="flex items-center gap-4">
           <NavLink href="/" icon={BookOpen}>Learn</NavLink>
           <NavLink href="/quiz" icon={HelpCircle}>Quiz</NavLink>
         </nav>
