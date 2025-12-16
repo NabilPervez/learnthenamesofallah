@@ -20,9 +20,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <meta name="theme-color" content="#10b981" />
+        <meta name="theme-color" content="#020817" />
       </head>
-      <body className="font-sans antialiased bg-gradient-to-br from-emerald-50 to-teal-50 min-h-screen text-slate-800">
+      <body className="font-sans antialiased bg-background min-h-screen text-foreground">
         {children}
         <Toaster />
         <PwaInstaller />
