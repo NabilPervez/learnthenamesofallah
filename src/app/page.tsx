@@ -1,11 +1,9 @@
-import Header from "@/components/Header";
 import NameCard from "@/components/NameCard";
 import { namesOfAllah } from "@/data/names";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary mb-2">

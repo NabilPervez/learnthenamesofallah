@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import PwaInstaller from "@/components/PwaInstaller";
+import BottomNav from "@/components/BottomNav";
 
 export const metadata: Metadata = {
   title: "Asmaul Husna",
@@ -22,8 +23,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="theme-color" content="#020817" />
       </head>
-      <body className="font-sans antialiased bg-background min-h-screen text-foreground">
+      <body className="font-sans antialiased bg-background min-h-screen text-foreground pb-20">
         {children}
+        <BottomNav />
         <Toaster />
         <PwaInstaller />
       </body>

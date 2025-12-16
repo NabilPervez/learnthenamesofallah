@@ -1,7 +1,6 @@
 
 import { namesOfAllah } from "@/data/names";
 import { notFound } from "next/navigation";
-import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
@@ -17,7 +16,6 @@ export default function NameDetailPage({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <Header />
       <main className="container mx-auto max-w-3xl px-4 py-8">
         <div className="mb-6">
           <Button variant="ghost" asChild>
@@ -72,24 +70,7 @@ export default function NameDetailPage({ params }: { params: { id: string } }) {
                 </div>
               )}
 
-              {name.hadith && (
-                <div>
-                  <h3 className="font-headline text-xl font-semibold mb-3 flex items-center">
-                    <MessageSquareQuote className="mr-3 h-5 w-5 text-primary" />
-                    Hadith & Stories
-                  </h3>
-                  <blockquote className="border-l-4 border-primary pl-4 text-foreground/80 space-y-4">
-                    {name.hadith.topic && <p className="text-sm font-semibold text-primary uppercase tracking-wide">{name.hadith.topic}</p>}
-                    <p className="font-arabic text-2xl text-right leading-loose" style={{ fontFamily: "serif" }}>
-                      {name.hadith.arabic}
-                    </p>
-                    <p className="italic leading-relaxed">{name.hadith.english}</p>
-                    <footer className="mt-2 text-sm text-muted-foreground not-italic text-right">
-                      - {name.hadith.reference}
-                    </footer>
-                  </blockquote>
-                </div>
-              )}
+
             </div>
           </CardContent>
         </Card>
