@@ -43,3 +43,13 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+# Android (TWA) build output and signing keys: never commit
+*.keystore
+*.jks
+*.pem
+twa/app/
+twa/build/
+twa/.gradle/
+twa/*.aab
+twa/*.apk
+twa/*.idsig

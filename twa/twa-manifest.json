@@ -1,0 +1,38 @@
+{
+  "packageId": "com.nabilpervez.learnnames",
+  "host": "learnthenamesofallah.netlify.app",
+  "name": "Learn the Names of Allah",
+  "launcherName": "99 Names",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#66A5AD",
+  "navigationColor": "#66A5AD",
+  "navigationColorDark": "#66A5AD",
+  "navigationDividerColor": "#66A5AD",
+  "navigationDividerColorDark": "#66A5AD",
+  "backgroundColor": "#E0F4F1",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://learnthenamesofallah.netlify.app/icons/icon-512.png",
+  "maskableIconUrl": "https://learnthenamesofallah.netlify.app/icons/maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./learnnames-upload.keystore",
+    "alias": "upload"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://learnthenamesofallah.netlify.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://learnthenamesofallah.netlify.app/",
+  "minSdkVersion": 21
+}
